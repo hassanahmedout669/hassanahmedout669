@@ -7,5 +7,5 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Not on Monday or Wednesday
-        run: echo "This step will always run on runner"
+        run: touch hellowworld
 
