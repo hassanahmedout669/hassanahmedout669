@@ -3,15 +3,9 @@ name: Super-Lint
 on: push
 
 jobs:
-  super-lint:
-    name: Lint code base
+  test_schedule:
     runs-on: self-hosted
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Not on Monday or Wednesday
+        run: echo "This step will always run"
 
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
