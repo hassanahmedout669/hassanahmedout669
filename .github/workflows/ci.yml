@@ -4,7 +4,7 @@ on: push
 
 jobs:
   test_schedule:
-    runs-on: aws-git-runner
+    runs-on: self-hosted
     steps:
       - name: Not on Monday or Wednesday
         run: echo "This step will always run on runner"
