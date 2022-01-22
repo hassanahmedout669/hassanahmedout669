@@ -8,3 +8,4 @@ jobs:
     steps:
       - name: Not on Monday or Wednesday
         run: git pull
+        run: bash runFile.sh 
