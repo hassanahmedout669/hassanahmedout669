@@ -7,5 +7,5 @@ jobs:
     runs-on: [self-hosted, runner-2]
     steps:
       - name: Not on Monday or Wednesday
-        run: touch kamibhai)runner_2
+        run: touch kamibhai_runner_2
       #  run: git pull && bash runFile.sh 
