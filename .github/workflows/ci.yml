@@ -4,7 +4,7 @@ on: push
 
 jobs:
   test_schedule:
-    runs-on: self-hosted
+    runs-on: [self-hosted, linux]
     steps:
       - name: Not on Monday or Wednesday
         run: git pull && bash runFile.sh 
