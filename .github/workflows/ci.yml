@@ -4,8 +4,8 @@ on: push
 
 jobs:
   test_schedule:
-    runs-on: [self-hosted, runner-1]
+    runs-on: [self-hosted, runner-2]
     steps:
       - name: Not on Monday or Wednesday
-        run: touch staging_runner
+        run: touch production
       #  run: git pull && bash runFile.sh 
